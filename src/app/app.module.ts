@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { ViewstudentComponent } from './viewstudent/viewstudent.component';
 import { FormsModule } from '@angular/forms';
+import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 const appRoutes:Routes=[
   
   {
@@ -27,7 +28,10 @@ const appRoutes:Routes=[
     path:"addstudent",component:AddstudentComponent,
   },
   {
-    path:"views",component:ViewstudentComponent,
+    path:"viewstudent",component:ViewstudentComponent,
+  },
+  {
+    path:"addfaculty",component:AddfacultyComponent,
   }
  
 ]
@@ -40,7 +44,8 @@ const appRoutes:Routes=[
     DashboardComponent,
     AddstudentComponent,
     ViewstudentComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddfacultyComponent
   ],
   imports: [
     BrowserModule,
