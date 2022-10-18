@@ -7,19 +7,27 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
+
+import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
+import { ViewstudentComponent } from './viewstudent/viewstudent.component';
+import { FormsModule } from '@angular/forms';
 const appRoutes:Routes=[
+  
   {
-    path:"signup",component:SignupComponent,
+    path:"",component:SigninComponent,
   },
   {
-    path:"signin",component:SigninComponent,
+    path:"signup",component:SignupComponent,
   },
   {
     path:"dashboard",component:DashboardComponent,
   },
   {
     path:"addstudent",component:AddstudentComponent,
+  },
+  {
+    path:"views",component:ViewstudentComponent,
   }
  
 ]
@@ -30,13 +38,16 @@ const appRoutes:Routes=[
     SigninComponent,
     SignupComponent,
     DashboardComponent,
-    AddstudentComponent
+    AddstudentComponent,
+    ViewstudentComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

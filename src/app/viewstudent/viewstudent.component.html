@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                   
+                   <th scope="col">Name</th>
+                    <th scope="col">Roll no</th>
+                    <th scope="col">Admission no</th>
+                    <th scope="col">College</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Bloodgroup</th>
+                    <th scope="col">Dob</th>
+                    <th scope="col">Parent Name</th>
+                    <th scope="col">Parent Emailid</th>
+                    <th scope="col">Guardian Name</th>
+                    <th scope="col">Guardian Address</th>
+                 </tr>
+                </thead>
+                  <tbody>
+                  <tr *ngFor="let i of studentData">
+                    <td>{{i.name}}</td>
+                    <td>{{i.rno}}</td>
+                    <td>{{i.admno}}</td>
+                    <td>{{i.college}}</td>
+                    <td>{{i.department}}</td>
+                    <td>{{i.bloodgroup}}</td>
+                    <td>{{i.dob}}</td>
+                    <td>{{i.pname}}</td>
+                    <td>{{i.pemail}}</td>
+                    <td>{{i.gname}}</td>
+                    <td>{{i.gaddress}}</td>
+                    </tr>
+                
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+

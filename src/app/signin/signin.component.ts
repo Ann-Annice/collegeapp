@@ -24,6 +24,7 @@ readValues=()=>{
   }
   else{
     alert("invald login")
+    this.myrouter.navigate(["/"])
   }
 console.log(data)
 
